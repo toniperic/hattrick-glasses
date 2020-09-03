@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           Hattrick Glasses
+@namespace      github.com/toniperic/hattrick-glasses
+@version        1.0.0
+@author         tperic
+@license        MIT
+@var text   fontSize "Font size" 14px
+==/UserStyle== */
+@-moz-document regexp("https://[a-z0-9]+.hattrick.org/Forum/.*") {
+    div#content {
+        font-size: var(--fontSize);
+    }
+
+    .mainConf .boxHead h2 span:not(:last-of-type) {
+        opacity: .6;
+    }
+
+    .mainConf .boxHead:hover h2 span {
+        opacity: 1;
+    }
+
+    .cfHeader {
+        padding: 6px;
+    }
+}
